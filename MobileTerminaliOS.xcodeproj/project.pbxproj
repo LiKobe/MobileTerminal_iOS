@@ -15,6 +15,7 @@
 		6D9836FA1F13BD4C0043DB0F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D9836F81F13BD4C0043DB0F /* LaunchScreen.storyboard */; };
 		6D9837051F13BD4D0043DB0F /* MobileTerminaliOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9837041F13BD4D0043DB0F /* MobileTerminaliOSTests.m */; };
 		6D9837101F13BD4D0043DB0F /* MobileTerminaliOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D98370F1F13BD4D0043DB0F /* MobileTerminaliOSUITests.m */; };
+		D9E27F7630EF2C29F55976D0 /* libPods-MobileTerminaliOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E33754E60E51F40535D94336 /* libPods-MobileTerminaliOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,9 @@
 		6D98370B1F13BD4D0043DB0F /* MobileTerminaliOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileTerminaliOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D98370F1F13BD4D0043DB0F /* MobileTerminaliOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MobileTerminaliOSUITests.m; sourceTree = "<group>"; };
 		6D9837111F13BD4D0043DB0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8803381BB78059B94E877322 /* Pods-MobileTerminaliOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileTerminaliOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileTerminaliOS/Pods-MobileTerminaliOS.release.xcconfig"; sourceTree = "<group>"; };
+		96316420A661EE33580A5FCD /* Pods-MobileTerminaliOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileTerminaliOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileTerminaliOS/Pods-MobileTerminaliOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E33754E60E51F40535D94336 /* libPods-MobileTerminaliOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileTerminaliOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E27F7630EF2C29F55976D0 /* libPods-MobileTerminaliOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				6D9837031F13BD4D0043DB0F /* MobileTerminaliOSTests */,
 				6D98370E1F13BD4D0043DB0F /* MobileTerminaliOSUITests */,
 				6D9836E81F13BD4C0043DB0F /* Products */,
+				8B4C4800E1E63019DCA65440 /* Pods */,
+				F1DFB5E7521507996F71C5AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = MobileTerminaliOSUITests;
 			sourceTree = "<group>";
 		};
+		8B4C4800E1E63019DCA65440 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96316420A661EE33580A5FCD /* Pods-MobileTerminaliOS.debug.xcconfig */,
+				8803381BB78059B94E877322 /* Pods-MobileTerminaliOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F1DFB5E7521507996F71C5AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E33754E60E51F40535D94336 /* libPods-MobileTerminaliOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D9837141F13BD4D0043DB0F /* Build configuration list for PBXNativeTarget "MobileTerminaliOS" */;
 			buildPhases = (
+				D6E1A852EC7556F93B3EAEC1 /* [CP] Check Pods Manifest.lock */,
 				6D9836E31F13BD4C0043DB0F /* Sources */,
 				6D9836E41F13BD4C0043DB0F /* Frameworks */,
 				6D9836E51F13BD4C0043DB0F /* Resources */,
+				62925998460BC275FB3C0E76 /* [CP] Embed Pods Frameworks */,
+				39CD9841043C865DF20A118B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +294,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		39CD9841043C865DF20A118B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileTerminaliOS/Pods-MobileTerminaliOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62925998460BC275FB3C0E76 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileTerminaliOS/Pods-MobileTerminaliOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6E1A852EC7556F93B3EAEC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D9836E31F13BD4C0043DB0F /* Sources */ = {
@@ -424,6 +499,7 @@
 		};
 		6D9837151F13BD4D0043DB0F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96316420A661EE33580A5FCD /* Pods-MobileTerminaliOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileTerminaliOS/Info.plist;
@@ -435,6 +511,7 @@
 		};
 		6D9837161F13BD4D0043DB0F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8803381BB78059B94E877322 /* Pods-MobileTerminaliOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobileTerminaliOS/Info.plist;
